@@ -1,0 +1,35 @@
+<ion-content>
+    <ion-card class="welcome-card">
+      <img src="/assets/shapes.jpg" alt="" />
+      <ion-card-header>
+        <ion-card-subtitle>Get Started</ion-card-subtitle>
+        <ion-card-title>Welcome to Burger Final</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>There are tons of burgers in the world, but there’s more to our burger than that. Check out some of the resources below for next steps.</p>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Menu selection card -->
+    <ion-card class="welcome-card" style="background-color: #f04141;" [routerDirection]="'root'" [routerLink]="'/tabs/menu'">
+      <ion-icon size="large" color="light"  name="list-box"></ion-icon>
+      <ion-card-header class="welcome-text">
+        <ion-card-subtitle font style="font-size: 28px;">MENU</ion-card-subtitle>
+        <ion-card-subtitle>Real Good Food</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+    <ion-card class="welcome-card" style="background-color: #4c8dff;" [routerDirection]="'root'" [routerLink]="'/tabs/order'">
+      <ion-icon size="large" color="light" name="rocket"></ion-icon>
+      <ion-card-header class="welcome-text">
+        <ion-card-subtitle font style="font-size: 28px;">ORDER</ion-card-subtitle>
+        <ion-card-subtitle>Start Your Order</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+    <ion-card class="welcome-card" style="background-color: #10dc60;" [routerDirection]="'root'" [routerLink]="'/tabs/mypage'">
+      <ion-icon size="large" color="light" name="person"></ion-icon>
+      <ion-card-header class="welcome-text">
+        <ion-card-subtitle font style="font-size: 28px;">MY PAGE</ion-card-subtitle>
+        <ion-card-subtitle>Check Your Order</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+</ion-content>

@@ -1,0 +1,37 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="arrow-back" color="dark"  defaultHref="/tabs/home"></ion-back-button>
+    </ion-buttons>
+    <ion-card class="titleCard">
+        <ion-card-header>
+          <ion-card-subtitle>MY PAGE</ion-card-subtitle>
+        </ion-card-header>
+    </ion-card>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card  class="reset">
+    <h3>My Order</h3>
+    <p>Order Type: {{orderType}}</p>
+    <ion-button color="success" class="resetBtn" expand="block" (click)="openPopover()">CHECKOUT</ion-button>
+  </ion-card>
+
+  <ion-card>
+      <ion-row>
+        <ion-col>Menu</ion-col>
+        <ion-col>Unit Price</ion-col>
+        <ion-col>Quantity</ion-col>
+        <ion-col>Sub Total</ion-col>
+      </ion-row>
+  
+      <ion-row *ngFor="let detail of detailData">
+          <ion-col>{{detail.menuName}}</ion-col>
+          <ion-col>${{detail.unitPrice}}</ion-col>
+          <ion-col>{{detail.quantity}}</ion-col>
+          <ion-col>${{detail.quantity * detail.unitPrice | number:'1.2-2'}}</ion-col>
+      </ion-row>
+    </ion-card>
+
+</ion-content>

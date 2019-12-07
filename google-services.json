@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "332659599296",
+    "firebase_url": "https://burger-final-21a4f.firebaseio.com",
+    "project_id": "burger-final-21a4f",
+    "storage_bucket": "burger-final-21a4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332659599296:android:c3965a0845ab1c9c9d4a25",
+        "android_client_info": {
+          "package_name": "ca.on.conestoga.burgerfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332659599296-puhdung5bpjffdlf2uic4vqmkvvfcthp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaORtxvSoW4RI_Qwh649eoBPtVp_ZhqGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332659599296-puhdung5bpjffdlf2uic4vqmkvvfcthp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

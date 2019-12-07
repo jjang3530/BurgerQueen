@@ -1,0 +1,11 @@
+<ion-content>
+
+  <h3>IS THIS ORDER FOR?</h3>
+
+<ion-button expand="block" color="primary" size="large" (click)="selected('Delivery')" [routerDirection]="'root'" [routerLink]="'/tabs/home'">
+  <ion-label>Delivery</ion-label>
+</ion-button>
+<ion-button expand="block" color="danger" size="large" (click)="selected('Carryout')" [routerDirection]="'root'" [routerLink]="'/tabs/home'">
+  <ion-label>Carryout</ion-label>
+</ion-button>
+</ion-content>

@@ -1,0 +1,135 @@
+<ion-header no-border>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button text="" icon="arrow-back" color="dark"  defaultHref="/tabs/home"></ion-back-button>
+      </ion-buttons>
+      <ion-card class="titleCard">
+          <ion-card-header>
+            <ion-card-subtitle class="headertitle">ORDER</ion-card-subtitle>
+          </ion-card-header>
+      </ion-card>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-card class="welcome-card" style="background-color: #4c8dff;">
+      <img src="/assets/burger.jpg" alt="burger" />
+      <ion-card-header class="welcome-text">
+        <ion-card-subtitle font style="font-size: 28px;">Final Burger  <br> $4.99</ion-card-subtitle>
+        <ion-card-subtitle>Burger Final signature burger
+        </ion-card-subtitle>
+            <ion-select class="select" #quantityB (ionChange)="onChangeB(quantityB.value)">
+             <ion-select-option value=0 selected>Quantity</ion-select-option>
+             <ion-select-option value=1>1</ion-select-option>
+             <ion-select-option value=2>2</ion-select-option>
+             <ion-select-option value=3>3</ion-select-option>
+             <ion-select-option value=4>4</ion-select-option>
+             <ion-select-option value=5>5</ion-select-option>
+             <ion-select-option value=6>6</ion-select-option>
+             <ion-select-option value=7>7</ion-select-option>
+             <ion-select-option value=8>8</ion-select-option>
+             <ion-select-option value=9>9</ion-select-option>
+             <ion-select-option value=10>10</ion-select-option>
+           </ion-select>       
+      <section>
+        <ion-button color="danger" expand="block" (click)="orderMenuB()">ORDER</ion-button>
+      </section>
+      </ion-card-header>
+    </ion-card>
+  
+    <ion-card class="welcome-card" style="background-color: #4c8dff;">
+      <img src="/assets/cheeseburger.jpg" alt="cheeseburger" />
+      <ion-card-header class="welcome-text">
+        <ion-card-subtitle font style="font-size: 28px;">Final Cheese Burger  <br> $5.49</ion-card-subtitle>
+        <ion-card-subtitle>Our Canadian Cheese is the real thing</ion-card-subtitle>
+        <ion-select class="select" #quantityC (ionChange)="onChangeC(quantityC.value)">
+            <ion-select-option value=0 selected>Quantity</ion-select-option>
+            <ion-select-option value=1>1</ion-select-option>
+            <ion-select-option value=2>2</ion-select-option>
+            <ion-select-option value=3>3</ion-select-option>
+            <ion-select-option value=4>4</ion-select-option>
+            <ion-select-option value=5>5</ion-select-option>
+            <ion-select-option value=6>6</ion-select-option>
+            <ion-select-option value=7>7</ion-select-option>
+            <ion-select-option value=8>8</ion-select-option>
+            <ion-select-option value=9>9</ion-select-option>
+            <ion-select-option value=10>10</ion-select-option>
+          </ion-select>       
+     <section>
+       <ion-button color="danger" expand="block" (click)="orderMenuC()">ORDER</ion-button>
+     </section>
+     </ion-card-header>
+   </ion-card>
+  
+    <ion-card class="welcome-card" style="background-color: #4c8dff;">
+      <img src="/assets/doubleburger.jpg" alt="Doubleburger" />
+      <ion-card-header class="welcome-text">
+        <ion-card-subtitle font style="font-size: 28px;">Final Double Burger  <br> $6.99</ion-card-subtitle>
+        <ion-card-subtitle>Update our signature burger x 2 Beef Patties</ion-card-subtitle>
+        <ion-select class="select" #quantityD (ionChange)="onChangeD(quantityD.value)">
+            <ion-select-option value=0 selected>Quantity</ion-select-option>
+            <ion-select-option value=1>1</ion-select-option>
+            <ion-select-option value=2>2</ion-select-option>
+            <ion-select-option value=3>3</ion-select-option>
+            <ion-select-option value=4>4</ion-select-option>
+            <ion-select-option value=5>5</ion-select-option>
+            <ion-select-option value=6>6</ion-select-option>
+            <ion-select-option value=7>7</ion-select-option>
+            <ion-select-option value=8>8</ion-select-option>
+            <ion-select-option value=9>9</ion-select-option>
+            <ion-select-option value=10>10</ion-select-option>
+          </ion-select>       
+     <section>
+       <ion-button color="danger" expand="block" (click)="orderMenuD()">ORDER</ion-button>
+     </section>
+     </ion-card-header>
+   </ion-card>
+  
+    <ion-card class="welcome-card" style="background-color: #4c8dff;">
+      <img src="/assets/fries.jpg" alt="fries" />
+      <ion-card-header class="welcome-text">
+        <ion-card-subtitle font style="font-size: 28px;">Final Fries<br> $1.99</ion-card-subtitle>
+        <ion-card-subtitle>Fresh, HAND-CUT potatoes prepared</ion-card-subtitle>
+        <ion-select class="select" #quantityF (ionChange)="onChangeF(quantityF.value)">
+            <ion-select-option value=0 selected>Quantity</ion-select-option>
+            <ion-select-option value=1>1</ion-select-option>
+            <ion-select-option value=2>2</ion-select-option>
+            <ion-select-option value=3>3</ion-select-option>
+            <ion-select-option value=4>4</ion-select-option>
+            <ion-select-option value=5>5</ion-select-option>
+            <ion-select-option value=6>6</ion-select-option>
+            <ion-select-option value=7>7</ion-select-option>
+            <ion-select-option value=8>8</ion-select-option>
+            <ion-select-option value=9>9</ion-select-option>
+            <ion-select-option value=10>10</ion-select-option>
+          </ion-select>       
+     <section>
+       <ion-button color="danger" expand="block" (click)="orderMenuF()">ORDER</ion-button>
+     </section>
+     </ion-card-header>
+   </ion-card>
+  
+    <ion-card class="welcome-card" style="background-color: #4c8dff;">
+      <img src="/assets/beverage.jpg" alt="beverage" />
+      <ion-card-header class="welcome-text">
+        <ion-card-subtitle font style="font-size: 28px;">Beverages  <br> $0.99</ion-card-subtitle>
+        <ion-card-subtitle>COCA-COLA®, DIET COKE®, 7UP®, DR. PEPPER® and ROOT BEER</ion-card-subtitle>
+        <ion-select class="select" #quantityP (ionChange)="onChangeP(quantityP.value)">
+            <ion-select-option value=0 selected>Quantity</ion-select-option>
+            <ion-select-option value=1>1</ion-select-option>
+            <ion-select-option value=2>2</ion-select-option>
+            <ion-select-option value=3>3</ion-select-option>
+            <ion-select-option value=4>4</ion-select-option>
+            <ion-select-option value=5>5</ion-select-option>
+            <ion-select-option value=6>6</ion-select-option>
+            <ion-select-option value=7>7</ion-select-option>
+            <ion-select-option value=8>8</ion-select-option>
+            <ion-select-option value=9>9</ion-select-option>
+            <ion-select-option value=10>10</ion-select-option>
+          </ion-select>       
+     <section>
+       <ion-button color="danger" expand="block" (click)="orderMenuP()">ORDER</ion-button>
+     </section>
+     </ion-card-header>
+   </ion-card>
+        

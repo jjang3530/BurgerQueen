@@ -1,0 +1,7 @@
+{
+  "name": "BurgerFinal",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
