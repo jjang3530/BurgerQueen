@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { IonicStorageModule } from '@ionic/storage';
 import { SQLite } from '@ionic-native/sqlite/ngx';
 import { ResetpopoverComponent} from './resetpopover/resetpopover.component';
+import {FCM} from '@ionic-native/fcm/ngx';
 
 @NgModule({
   declarations: [AppComponent, ResetpopoverComponent],
@@ -24,6 +25,7 @@ import { ResetpopoverComponent} from './resetpopover/resetpopover.component';
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     SQLite,
+    FCM,
   ],
   bootstrap: [AppComponent]
 })
